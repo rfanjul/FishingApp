@@ -7,7 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MapKit/MapKit.h"
+#import <CoreLocation/CoreLocation.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<MKMapViewDelegate, CLLocationManagerDelegate>
+{
+    
+    CLLocationManager *locationManager;
+    CLLocation *location;
+    float latitude, longitude;
+}
+
+
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+
+@property (strong, nonatomic) IBOutlet MKMapView *map;
+
+- (IBAction)setMapType:(id)sender;
 
 @end

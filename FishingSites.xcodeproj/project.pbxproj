@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D24C0E819141B9900F4B11A /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D24C0E719141B9900F4B11A /* MapAnnotation.m */; };
 		4DBB1C4A1905726C00CBD2AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DBB1C491905726C00CBD2AB /* Foundation.framework */; };
 		4DBB1C4C1905726C00CBD2AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DBB1C4B1905726C00CBD2AB /* CoreGraphics.framework */; };
 		4DBB1C4E1905726C00CBD2AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DBB1C4D1905726C00CBD2AB /* UIKit.framework */; };
@@ -14,7 +15,6 @@
 		4DBB1C561905726C00CBD2AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DBB1C551905726C00CBD2AB /* main.m */; };
 		4DBB1C5A1905726C00CBD2AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DBB1C591905726C00CBD2AB /* AppDelegate.m */; };
 		4DBB1C5D1905726C00CBD2AB /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DBB1C5B1905726C00CBD2AB /* Main_iPhone.storyboard */; };
-		4DBB1C601905726C00CBD2AB /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DBB1C5E1905726C00CBD2AB /* Main_iPad.storyboard */; };
 		4DBB1C631905726C00CBD2AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DBB1C621905726C00CBD2AB /* ViewController.m */; };
 		4DBB1C651905726C00CBD2AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DBB1C641905726C00CBD2AB /* Images.xcassets */; };
 		4DBB1C6C1905726C00CBD2AB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DBB1C6B1905726C00CBD2AB /* XCTest.framework */; };
@@ -22,6 +22,7 @@
 		4DBB1C6E1905726C00CBD2AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DBB1C4D1905726C00CBD2AB /* UIKit.framework */; };
 		4DBB1C761905726C00CBD2AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DBB1C741905726C00CBD2AB /* InfoPlist.strings */; };
 		4DBB1C781905726C00CBD2AB /* FishingSitesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DBB1C771905726C00CBD2AB /* FishingSitesTests.m */; };
+		4DBB1C821905732900CBD2AB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DBB1C811905732900CBD2AB /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D24C0E619141B9900F4B11A /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
+		4D24C0E719141B9900F4B11A /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
 		4DBB1C461905726C00CBD2AB /* FishingSites.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishingSites.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DBB1C491905726C00CBD2AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4DBB1C4B1905726C00CBD2AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -46,7 +49,6 @@
 		4DBB1C581905726C00CBD2AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4DBB1C591905726C00CBD2AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4DBB1C5C1905726C00CBD2AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		4DBB1C5F1905726C00CBD2AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		4DBB1C611905726C00CBD2AB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4DBB1C621905726C00CBD2AB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4DBB1C641905726C00CBD2AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 		4DBB1C731905726C00CBD2AB /* FishingSitesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FishingSitesTests-Info.plist"; sourceTree = "<group>"; };
 		4DBB1C751905726C00CBD2AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4DBB1C771905726C00CBD2AB /* FishingSitesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FishingSitesTests.m; sourceTree = "<group>"; };
+		4DBB1C811905732900CBD2AB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DBB1C821905732900CBD2AB /* MapKit.framework in Frameworks */,
 				4DBB1C4C1905726C00CBD2AB /* CoreGraphics.framework in Frameworks */,
 				4DBB1C4E1905726C00CBD2AB /* UIKit.framework in Frameworks */,
 				4DBB1C4A1905726C00CBD2AB /* Foundation.framework in Frameworks */,
@@ -81,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D24C0E519141B7200F4B11A /* class */ = {
+			isa = PBXGroup;
+			children = (
+				4D24C0E619141B9900F4B11A /* MapAnnotation.h */,
+				4D24C0E719141B9900F4B11A /* MapAnnotation.m */,
+			);
+			name = class;
+			sourceTree = "<group>";
+		};
 		4DBB1C3D1905726C00CBD2AB = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +116,7 @@
 		4DBB1C481905726C00CBD2AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4DBB1C811905732900CBD2AB /* MapKit.framework */,
 				4DBB1C491905726C00CBD2AB /* Foundation.framework */,
 				4DBB1C4B1905726C00CBD2AB /* CoreGraphics.framework */,
 				4DBB1C4D1905726C00CBD2AB /* UIKit.framework */,
@@ -114,10 +128,10 @@
 		4DBB1C4F1905726C00CBD2AB /* FishingSites */ = {
 			isa = PBXGroup;
 			children = (
+				4D24C0E519141B7200F4B11A /* class */,
 				4DBB1C581905726C00CBD2AB /* AppDelegate.h */,
 				4DBB1C591905726C00CBD2AB /* AppDelegate.m */,
 				4DBB1C5B1905726C00CBD2AB /* Main_iPhone.storyboard */,
-				4DBB1C5E1905726C00CBD2AB /* Main_iPad.storyboard */,
 				4DBB1C611905726C00CBD2AB /* ViewController.h */,
 				4DBB1C621905726C00CBD2AB /* ViewController.m */,
 				4DBB1C641905726C00CBD2AB /* Images.xcassets */,
@@ -231,7 +245,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DBB1C601905726C00CBD2AB /* Main_iPad.storyboard in Resources */,
 				4DBB1C651905726C00CBD2AB /* Images.xcassets in Resources */,
 				4DBB1C5D1905726C00CBD2AB /* Main_iPhone.storyboard in Resources */,
 				4DBB1C541905726C00CBD2AB /* InfoPlist.strings in Resources */,
@@ -256,6 +269,7 @@
 				4DBB1C631905726C00CBD2AB /* ViewController.m in Sources */,
 				4DBB1C5A1905726C00CBD2AB /* AppDelegate.m in Sources */,
 				4DBB1C561905726C00CBD2AB /* main.m in Sources */,
+				4D24C0E819141B9900F4B11A /* MapAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,14 +306,6 @@
 				4DBB1C5C1905726C00CBD2AB /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		4DBB1C5E1905726C00CBD2AB /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4DBB1C5F1905726C00CBD2AB /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		4DBB1C741905726C00CBD2AB /* InfoPlist.strings */ = {
@@ -470,6 +476,7 @@
 				4DBB1C7D1905726C00CBD2AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DBB1C7E1905726C00CBD2AB /* Build configuration list for PBXNativeTarget "FishingSitesTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +485,7 @@
 				4DBB1C801905726C00CBD2AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
