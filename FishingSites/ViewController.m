@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "MapAnnotation.h"
+#import "SIAlertView.h"
+
 @interface ViewController ()
 
 @end
@@ -115,17 +117,54 @@
     CGPoint touchPoint = [gestureRecognizer locationInView:self.map];
     touchMapCoordinate = [self.map convertPoint:touchPoint toCoordinateFromView:self.map];
     
+   
     
+    /*
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Comparte con la comunidad" message:@"" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Compartir", nil];
     
     
     [alert setAlertViewStyle:UIAlertViewStylePlainTextInput];
-    /* Display a numerical keypad for this text field */
+    // Display a numerical keypad for this text field
     textField = [alert textFieldAtIndex:0];
     textField.keyboardType = UIKeyboardTypeNumberPad;
     
     [alert show];
-  
+  */
+    
+    SIAlertView *alertView = [[SIAlertView alloc] initWithTitle:@"SIAlertView" andMessage:@"Sumi Interactive"];
+    
+    [alertView addButtonWithTitle:@"Button1"
+                             type:SIAlertViewButtonTypeDefault
+                          handler:^(SIAlertView *alert) {
+                              NSLog(@"Button1 Clicked");
+                          }];
+    [alertView addButtonWithTitle:@"Button2"
+                             type:SIAlertViewButtonTypeDestructive
+                          handler:^(SIAlertView *alert) {
+                              NSLog(@"Button2 Clicked");
+                          }];
+    [alertView addButtonWithTitle:@"Button3"
+                             type:SIAlertViewButtonTypeCancel
+                          handler:^(SIAlertView *alert) {
+                              NSLog(@"Button3 Clicked");
+                          }];
+    
+    alertView.willShowHandler = ^(SIAlertView *alertView) {
+        NSLog(@"%@, willShowHandler", alertView);
+    };
+    alertView.didShowHandler = ^(SIAlertView *alertView) {
+        NSLog(@"%@, didShowHandler", alertView);
+    };
+    alertView.willDismissHandler = ^(SIAlertView *alertView) {
+        NSLog(@"%@, willDismissHandler", alertView);
+    };
+    alertView.didDismissHandler = ^(SIAlertView *alertView) {
+        NSLog(@"%@, didDismissHandler", alertView);
+    };
+    
+    alertView.transitionStyle = SIAlertViewTransitionStyleBounce;
+    
+    [alertView show];
 }
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     
